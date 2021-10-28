@@ -1,0 +1,31 @@
+// RECORD Dati strutturati 
+// Primo esempio struct con due variabili 
+// definite e inizializzate contestualmente alla dichiarazione
+
+#include <stdio.h> 
+
+int main()
+{
+    
+    struct s_utente 
+    {
+    char cognome[15];
+    char nome [15];
+    int  pin;
+    } // definizioni e assegnazioni contestuali
+      utente1 = {"Verdi", "Mario", 1234}, 
+      utente2 = {"Rossi", "Umberto", 4321}; 
+    
+printf("Utente1 \n");
+printf("Cognome: %s\n", utente1.cognome);
+printf("   Nome: %s\n", utente1.nome);
+printf("   PIN:  %d\n", utente1.pin);
+
+
+printf("Utente2 \n");
+printf("Cognome: %s\n", utente2.cognome);
+printf("   Nome: %s\n", utente2.nome);
+printf("   PIN:  %d\n", utente2.pin);
+
+return 0;
+}
